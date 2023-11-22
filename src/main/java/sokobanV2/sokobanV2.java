@@ -7,9 +7,9 @@ public class sokobanV2 {
         Scanner sc = new Scanner(System.in);
         stage2 st2 = new stage2();
         System.out.println("Stage 2");
-        st2.printMap();
 
         while (true) {
+            st2.printMap();
             System.out.print("\nSOKOBAN> ");
             String s = sc.nextLine().toLowerCase();
             if (s.equals("q")) break;

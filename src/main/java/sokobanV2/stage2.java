@@ -17,7 +17,9 @@ public class stage2 {
         System.out.println();
         for (int i = 0; i < 77; i++) {
             System.out.print(chars[i]);
-            if (i % 11 == 10) System.out.println();
+            if (i % width == width - 1) {
+                System.out.println();
+            }
         }
     }
 
@@ -31,12 +33,12 @@ public class stage2 {
                 } else {
                     printMap();
                     System.out.println();
-                    System.out.println(chrUp + ": (경고!) 해당 명령을 수행할 수 없습니다!");
+                    System.out.println(chrUp + ": (경고) 지원하지 않는 명령입니다!");
                 }
             } catch (Exception e) {
                 printMap();
                 System.out.println();
-                System.out.println(chrUp + ": (경고!) 해당 명령을 수행할 수 없습니다!");
+                System.out.println(chrUp + ": (경고) 지원하지 않는 명령입니다!");
             }
         }
     }
